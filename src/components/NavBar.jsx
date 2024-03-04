@@ -1,5 +1,5 @@
 import { Button, Drawer, Dropdown, Select } from "antd";
-import { ChevronDown, Globe, Menu } from "lucide-react";
+import { ArrowRight, ChevronDown, Globe, Menu } from "lucide-react";
 import React, { useState } from "react";
 
 const items = [
@@ -73,23 +73,43 @@ const NavBar = () => {
           <MenuItem title="Contact" />
           <MenuItem title="Sales" />
           <MenuItem title="Login" />
-          <Button>Sign up free </Button>
+          <Button
+            type="primary"
+            size="large"
+            shape="round"
+            className="w-full flex items-center justify-center  bg-blue-600 text-white text-bold"
+          >
+            <span>Sign up here</span>
+            <ArrowRight />
+          </Button>
         </div>
       </div>
+
       {/* for smaller screen  */}
       <div className="justify-end  flex lg:hidden">
         <Menu className="h-8 cursor-pointer" onClick={() => setOpen(true)} />
       </div>
       <Drawer onClose={() => setOpen(false)} open={open}>
-        <div className="space-y-2">
-          <MenuItem title="Products" isNested={true} />
-          <MenuItem title="Solutions" isNested={true} />
-          <MenuItem title="Resources" isNested={true} />
-          <MenuItem title="Enterprise" />
-          <MenuItem title="Pricing" />
-          <MenuItem title="Contact" />
-          <MenuItem title="Sales" />
-          <MenuItem title="Login" />
+        <div className="flex flex-col justify-between h-full ">
+          <div className="space-y-2">
+            <MenuItem title="Products" isNested={true} />
+            <MenuItem title="Solutions" isNested={true} />
+            <MenuItem title="Resources" isNested={true} />
+            <MenuItem title="Enterprise" />
+            <MenuItem title="Pricing" />
+            <MenuItem title="Contact" />
+            <MenuItem title="Sales" />
+            <MenuItem title="Login" />
+          </div>
+          <Button
+            type="primary"
+            size="large"
+            shape="round"
+            className=" flex items-center justify-center  bg-blue-600 text-white text-bold"
+          >
+            <span>Sign up here</span>
+            <ArrowRight />
+          </Button>
         </div>
       </Drawer>
     </div>
