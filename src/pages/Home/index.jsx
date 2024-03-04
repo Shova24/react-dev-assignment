@@ -3,7 +3,7 @@ import HeroSection from "../../components/HeroSection";
 
 const Home = () => {
   return (
-    <div className="space-y-16">
+    <div className="space-y-8 sm:space-y-16">
       {/* navbar */}
 
       {/* herosection */}

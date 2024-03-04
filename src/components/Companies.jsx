@@ -7,27 +7,29 @@ import walmart from "../assets/companies_icons/walmart.svg";
 
 const Companies = () => {
   return (
-    <div>
-      <p className="text-center">Trusted by 45M+ users</p>
-      <div className="bg-zinc-200 flex justify-between items-center w-full">
+    <div className="space-y-8">
+      <p className="text-center text-sm text-zinc-600 ">
+        Trusted by 45M+ users
+      </p>
+      <div className="flex justify-between items-center w-full">
         <div className="w-1/5 flex justify-center">
-          <img src={walmart} alt="walmart" />
+          <img src={walmart} alt="walmart" className="h-12" />
         </div>
 
         <div className="w-1/5 flex justify-center">
-          <img src={crisco} alt="crisco" />
+          <img src={crisco} alt="crisco" className="h-12" />
         </div>
 
         <div className="w-1/5 flex justify-center">
-          <img src={volvo} alt="volvo" />
+          <img src={volvo} alt="volvo" className="h-12" />
         </div>
 
         <div className="w-1/5 flex justify-center">
-          <img src={deloitte} alt="deloitte" />
+          <img src={deloitte} alt="deloitte" className="h-12" />
         </div>
 
-        <div className="w-1/5 flex justify-center">
-          <img src={okta} alt="okta" />
+        <div className="w-1/5 flex justify-center ">
+          <img src={okta} alt="okta" className="h-12" />
         </div>
       </div>
     </div>
