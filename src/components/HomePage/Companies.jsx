@@ -1,9 +1,9 @@
 import React from "react";
-import crisco from "../assets/companies_icons/crisco.svg";
-import deloitte from "../assets/companies_icons/deloitte.svg";
-import okta from "../assets/companies_icons/okta.svg";
-import volvo from "../assets/companies_icons/volvo.svg";
-import walmart from "../assets/companies_icons/walmart.svg";
+import crisco from "../../assets/companies_icons/crisco.svg";
+import deloitte from "../../assets/companies_icons/deloitte.svg";
+import okta from "../../assets/companies_icons/okta.svg";
+import volvo from "../../assets/companies_icons/volvo.svg";
+import walmart from "../../assets/companies_icons/walmart.svg";
 
 const Companies = () => {
   return (

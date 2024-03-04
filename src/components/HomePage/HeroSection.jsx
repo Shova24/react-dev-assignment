@@ -3,7 +3,7 @@ import { ArrowRight, RotateCcw } from "lucide-react";
 import React from "react";
 import ReactStars from "react-stars";
 
-import headimage from "../assets/hero_section/headimage.svg";
+import headimage from "../../assets/hero_section/headimage.svg";
 
 const HeroSection = () => {
   return (
