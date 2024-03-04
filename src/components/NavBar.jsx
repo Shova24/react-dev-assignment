@@ -27,7 +27,7 @@ const NavBar = () => {
       >
         <a
           href={`/${title}`}
-          className="flex items-center  gap-1 cursor-pointer hover:text-[#4262FF]"
+          className="flex items-center  gap-1 cursor-pointer hover:text-blue-600"
         >
           <span>{title}</span>
           <span>
@@ -57,7 +57,7 @@ const NavBar = () => {
           <MenuItem title="Enterprise" />
           <MenuItem title="Pricing" />
         </div>
-        <div className="hidden lg:flex gap-4">
+        <div className="hidden lg:flex gap-4 items-center">
           <Select defaultValue="en" suffixIcon={null} className="border-0">
             <Select.Option value="en">
               <p className="flex items-center gap-2">

@@ -1,13 +1,14 @@
 import { Button, Input } from "antd";
-import { ArrowRight, RotateCcw, Star } from "lucide-react";
+import { ArrowRight, RotateCcw } from "lucide-react";
 import React from "react";
+import ReactStars from "react-stars";
 
 import headimage from "../assets/hero_section/headimage.svg";
 
 const HeroSection = () => {
   return (
-    <div className="grid grid-cols-1 md:grid-cols-2 justify-between py-4 my-4 items-center gap-8">
-      <div className=" space-y-4 ">
+    <div className="grid grid-cols-1 lg:grid-cols-5 justify-between py-4 my-4 items-center gap-8">
+      <div className=" space-y-4 lg:col-span-2">
         <p className="font-bold text-4xl">Take ideas from better to best</p>
         <p className="text-sm text-zinc-600 font-semibold">
           Miro is your team's visual platform to connect, collaborate, and
@@ -32,27 +33,23 @@ const HeroSection = () => {
           Collaborate with your team within minutes
         </p>
 
-        <div className="grid grid-cols-1 sm:grid-cols-8 bg-slate-200  p-4 rounded-md justify-between  w-full gap-8">
-          <div className="col-span-1 sm:col-start-1 sm:col-span-2 flex flex-col items-center justify-start sm:w-auto ">
-            <div className="flex gap-2 justify-start">
-              <Star className="w-4 h-4" />
-              <Star className="w-4 h-4" />
-              <Star className="w-4 h-4" />
-              <Star className="w-4 h-4" />
-              <Star className="w-4 h-4" />
-            </div>
-            <p className="text-xs">Based on 5149+ reviews:</p>
+        <div className="sm:flex bg-slate-200 space-y-4 p-4 rounded-md justify-between gap-8">
+          <div className="flex flex-col items-center sm:items-start justify-center ">
+            <ReactStars count={5} size={24} color2={"#FF9D48"} />
+            <p className="text-xs ">Based on 5149+ reviews:</p>
           </div>
 
-          <div className="col-span-1 sm:col-span-6 items-center gap-2  flex justify-around font-bold  sm:w-auto ">
-            <RotateCcw />
-            <span>GetApp</span>
-            <span>Capterra</span>
+          <div className="flex-1 flex justify-around items-center gap-2 font-bold ">
+            <p>
+              <RotateCcw />
+            </p>
+            <p>GetApp</p>
+            <p>Capterra</p>
           </div>
         </div>
       </div>
 
-      <div className="">
+      <div className="lg:col-span-3">
         <img src={headimage} alt="headimage" className="w-full" />
       </div>
     </div>
