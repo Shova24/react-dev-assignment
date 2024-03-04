@@ -33,13 +33,13 @@ const HeroSection = () => {
           Collaborate with your team within minutes
         </p>
 
-        <div className="sm:flex bg-slate-200 space-y-4 p-4 rounded-md justify-between gap-8">
-          <div className="flex flex-col items-center sm:items-start justify-center ">
+        <div className="sm:flex bg-slate-200 space-y-4 p-4 rounded-md justify-between items-start gap-8">
+          <div className="flex flex-col items-center sm:items-start justify-center  ">
             <ReactStars count={5} size={24} color2={"#FF9D48"} />
             <p className="text-xs ">Based on 5149+ reviews:</p>
           </div>
 
-          <div className="flex-1 flex justify-around items-center gap-2 font-bold ">
+          <div className="flex-1 flex justify-around items-center gap-2 font-bold  ">
             <p>
               <RotateCcw />
             </p>

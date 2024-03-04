@@ -9,7 +9,7 @@ const HomePageLayout = () => {
         <NavBar />
       </div>
 
-      <div className="px-8 md:px-16 xl:px-24">
+      <div className="min-w-2xl px-8 md:px-16 xl:px-24">
         <Outlet />
       </div>
       <footer className="sticky bottom-0"></footer>

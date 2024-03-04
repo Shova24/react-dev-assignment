@@ -4,6 +4,7 @@ import HeroSection from "../../components/HomePage/HeroSection";
 import CustomerStories from "../../components/HomePage/CustomerStories";
 import Tools from "../../components/HomePage/Tools";
 import Work from "../../components/HomePage/Work";
+import Report from "../../components/HomePage/Report";
 
 const Home = () => {
   return (
@@ -26,6 +27,7 @@ const Home = () => {
       <Tools />
 
       {/* report */}
+      <Report />
 
       {/* brainstorming */}
 

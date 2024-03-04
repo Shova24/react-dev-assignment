@@ -27,7 +27,7 @@ const NavBar = () => {
       >
         <a
           href={`/${title}`}
-          className="flex items-center  gap-1 cursor-pointer hover:text-blue-600"
+          className="flex items-center font-medium gap-1 cursor-pointer hover:text-blue-600"
         >
           <span>{title}</span>
           <span>
@@ -38,7 +38,7 @@ const NavBar = () => {
     ) : (
       <a
         href={`/${title}`}
-        className="flex items-center  cursor-pointer hover:text-[#4262FF]"
+        className="flex items-center font-medium cursor-pointer hover:text-[#4262FF]"
       >
         <span>{title}</span>
       </a>
