@@ -2,6 +2,8 @@ import Collaborations from "../../components/HomePage/Collaborations";
 import Companies from "../../components/HomePage/Companies";
 import HeroSection from "../../components/HomePage/HeroSection";
 import CustomerStories from "../../components/HomePage/CustomerStories";
+import Tools from "../../components/HomePage/Tools";
+import Work from "../../components/HomePage/Work";
 
 const Home = () => {
   return (
@@ -18,8 +20,10 @@ const Home = () => {
       <Collaborations />
 
       {/* work */}
+      <Work />
 
       {/* tools */}
+      <Tools />
 
       {/* report */}
 
