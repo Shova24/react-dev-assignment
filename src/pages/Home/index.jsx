@@ -1,10 +1,11 @@
 import Collaborations from "../../components/HomePage/Collaborations";
 import Companies from "../../components/HomePage/Companies";
 import HeroSection from "../../components/HomePage/HeroSection";
+import CustomerStories from "../../components/HomePage/CustomerStories";
 
 const Home = () => {
   return (
-    <div className="space-y-12 sm:space-y-20 md:space-y-24 2xl:space-y-32">
+    <div className="space-y-16 sm:space-y-20 md:space-y-24 2xl:space-y-32">
       {/* navbar */}
 
       {/* herosection */}
@@ -27,6 +28,7 @@ const Home = () => {
       {/* teams */}
 
       {/* Customer stories */}
+      <CustomerStories />
 
       {/* footer  */}
     </div>

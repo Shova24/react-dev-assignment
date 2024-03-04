@@ -8,7 +8,7 @@ import headimage from "../../assets/hero_section/headimage.svg";
 const HeroSection = () => {
   return (
     <div className="grid grid-cols-1 lg:grid-cols-5 justify-between py-4 my-4 items-center gap-8">
-      <div className=" space-y-4 lg:col-span-2">
+      <div className="space-y-4 lg:col-span-2">
         <p className="font-bold text-4xl">Take ideas from better to best</p>
         <p className="text-sm text-zinc-600 font-semibold">
           Miro is your team's visual platform to connect, collaborate, and
