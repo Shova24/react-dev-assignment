@@ -5,7 +5,7 @@ import React from "react";
 
 const Footer = () => {
   return (
-    <div className="flex gap-16 justify-between font-light text-white bg-blue-950 mt-4 min-w-2xl px-8 py-12 md:px-16 xl:px-24 text-sm">
+    <div className="flex justify-between gap-16 px-8 py-12 mt-4 text-sm font-light text-white bg-blue-950 min-w-2xl md:px-16 xl:px-24">
       <div className="space-y-8">
         <div className="flex justify-between">
           <div className="space-y-4">
@@ -31,8 +31,8 @@ const Footer = () => {
             </div>
           </div>
 
-          <div className="text-amber-400 font-semibold text-md space-y-4">
-            <p className="font-bold text-lg">Miro</p>
+          <div className="space-y-4 font-semibold text-amber-400 text-md">
+            <p className="text-lg font-bold">Miro</p>
             <hr />
 
             <p>-iPhone</p>
@@ -52,7 +52,7 @@ const Footer = () => {
       </div>
 
       <div className="flex items-center text-black">
-        <div className="bg-amber-400 p-8 rounded-lg space-y-4">
+        <div className="p-8 space-y-4 rounded-lg bg-amber-400">
           <p className="text-2xl font-bold">Sign up to our newsletter</p>
           <p>
             Receive the latest mobile security news, exclusive discounts &

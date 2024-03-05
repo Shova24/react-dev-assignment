@@ -5,6 +5,7 @@ import CustomerStories from "../../components/HomePage/CustomerStories";
 import Tools from "../../components/HomePage/Tools";
 import Work from "../../components/HomePage/Work";
 import Report from "../../components/HomePage/Report";
+import BrainStorming from "../../components/HomePage/BrainStorming";
 
 const Home = () => {
   return (
@@ -30,6 +31,7 @@ const Home = () => {
       <Report />
 
       {/* brainstorming */}
+      <BrainStorming />
 
       {/* teams */}
 

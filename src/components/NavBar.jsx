@@ -1,15 +1,16 @@
 import { Button, Drawer, Dropdown, Select } from "antd";
 import { ArrowRight, ChevronDown, Globe, Menu } from "lucide-react";
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 
 const items = [
   {
     key: "1",
-    label: <a href="/1st-menu-item">1st menu item</a>,
+    label: <Link to="#">1st menu item</Link>,
   },
   {
     key: "2",
-    label: <a href="/2nd-menu-item">2nd menu item</a>,
+    label: <Link to="#">2nd menu item</Link>,
   },
 ];
 
@@ -25,39 +26,40 @@ const NavBar = () => {
         placement="bottom"
         arrow
       >
-        <a
-          href={`/${title}`}
-          className="flex items-center font-medium gap-1 cursor-pointer hover:text-blue-600"
+        <Link
+          to="#"
+          className="flex items-center gap-1 font-medium cursor-pointer hover:text-blue-600"
         >
           <span>{title}</span>
           <span>
             <ChevronDown className="w-4" />
           </span>
-        </a>
+        </Link>
       </Dropdown>
     ) : (
-      <a
-        href={`/${title}`}
+      <Link
+        to="#"
         className="flex items-center font-medium cursor-pointer hover:text-[#4262FF]"
       >
         <span>{title}</span>
-      </a>
+      </Link>
     );
   };
 
   return (
-    <div className="flex items-center justify-center py-4 px-2 gap-4">
-      <img src="/miro.svg" alt="logo" className="h-6 w-20" />
+    <div className="flex items-center justify-center gap-4 px-2 py-4">
+      <img src="/miro.svg" alt="logo" className="w-20 h-6" />
 
-      <div className="flex-1 flex justify-between  ">
-        <div className="hidden lg:flex gap-4 ">
+      <div className="flex justify-between flex-1 ">
+        <div className="hidden gap-4 lg:flex ">
           <MenuItem title="Products" isNested={true} />
           <MenuItem title="Solutions" isNested={true} />
           <MenuItem title="Resources" isNested={true} />
           <MenuItem title="Enterprise" />
           <MenuItem title="Pricing" />
         </div>
-        <div className="hidden lg:flex gap-4 items-center">
+
+        <div className="items-center hidden gap-4 lg:flex">
           <Select defaultValue="en" suffixIcon={null} className="border-0">
             <Select.Option value="en">
               <p className="flex items-center gap-2">
@@ -77,7 +79,7 @@ const NavBar = () => {
             type="primary"
             size="large"
             shape="round"
-            className="w-full flex items-center justify-center  bg-blue-600 text-white text-bold"
+            className="flex items-center justify-center w-full text-white bg-blue-600 text-bold"
           >
             <span>Sign up here</span>
             <ArrowRight />
@@ -86,7 +88,7 @@ const NavBar = () => {
       </div>
 
       {/* for smaller screen  */}
-      <div className="justify-end  flex lg:hidden">
+      <div className="flex justify-end lg:hidden">
         <Menu className="h-8 cursor-pointer" onClick={() => setOpen(true)} />
       </div>
       <Drawer onClose={() => setOpen(false)} open={open}>
@@ -105,7 +107,7 @@ const NavBar = () => {
             type="primary"
             size="large"
             shape="round"
-            className=" flex items-center justify-center  bg-blue-600 text-white text-bold"
+            className="flex items-center justify-center text-white bg-blue-600 text-bold"
           >
             <span>Sign up here</span>
             <ArrowRight />

@@ -2,10 +2,11 @@ import React from "react";
 
 import tools from "../../assets/tools/tools.png";
 import { ArrowRight } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const Tools = () => {
   return (
-    <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center justify-center">
+    <div className="grid items-center justify-center grid-cols-1 gap-8 lg:grid-cols-2">
       <div>
         <img src={tools} alt="tools" className="w-full" />
       </div>
@@ -19,10 +20,13 @@ const Tools = () => {
           collaborate over Zoom, Miro has 100+ integrations with tools you
           already use and love.
         </p>
-        <a href="/" className="flex items-center gap-2 text-blue-600 underline">
+        <Link
+          to="#"
+          className="flex items-center gap-2 text-blue-600 underline"
+        >
           <span>Learn more</span>
           <ArrowRight className="h-4" />
-        </a>
+        </Link>
       </div>
     </div>
   );
