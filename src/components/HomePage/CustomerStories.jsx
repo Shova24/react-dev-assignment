@@ -38,14 +38,14 @@ const stories = [
 
 const CustomerStories = () => {
   return (
-    <div className="flex flex-col items-center gap-12">
-      <div className="flex items-center flex-col gap-8">
-        <p className="font-bold text-4xl">Loved by the world's best teams</p>
+    <div className="flex flex-col items-center justify-center h-full gap-12 lg:h-screen">
+      <div className="flex flex-col items-center gap-8">
+        <p className="text-4xl font-bold">Loved by the world's best teams</p>
         <div>
           <Button
             size="large"
             shape="round"
-            className="flex items-center justify-center border-blue-600 text-blue-600 text-bold"
+            className="flex items-center justify-center text-blue-600 border-blue-600 text-bold"
           >
             <span>Sign up here</span>
             <ArrowRight className="h-4" />
@@ -53,22 +53,22 @@ const CustomerStories = () => {
         </div>
       </div>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 md:gap-16">
+      <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3 md:gap-16">
         {stories?.map((story) => (
           <div key={story?.id} className="flex flex-col justify-between gap-8 ">
-            <div className="space-y-8  ">
+            <div className="space-y-8 ">
               <img src={story?.logo} alt="logo" className="h-10" />
-              <p className=" text-zinc-600 font-medium">{story?.description}</p>
+              <p className="font-medium text-zinc-600">{story?.description}</p>
             </div>
 
             <div className="flex gap-4">
               <img
                 src={story?.customer_image}
                 alt="customer"
-                className="h-12 w-12"
+                className="w-12 h-12"
               />
 
-              <div className="text-sm text-zinc-500 font-medium">
+              <div className="text-sm font-medium text-zinc-500">
                 <p>{story?.customer_name}</p>
                 <p>{story?.customer_designation}</p>
               </div>

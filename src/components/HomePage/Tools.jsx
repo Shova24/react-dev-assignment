@@ -1,12 +1,12 @@
+import { ArrowRight } from "lucide-react";
 import React from "react";
+import { Link } from "react-router-dom";
 
 import tools from "../../assets/tools/tools.png";
-import { ArrowRight } from "lucide-react";
-import { Link } from "react-router-dom";
 
 const Tools = () => {
   return (
-    <div className="grid items-center justify-center grid-cols-1 gap-8 lg:grid-cols-2">
+    <div className="grid items-center justify-center h-full grid-cols-1 gap-8 lg:h-screen lg:grid-cols-2">
       <div>
         <img src={tools} alt="tools" className="w-full" />
       </div>

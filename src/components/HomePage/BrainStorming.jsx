@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 
 const BrainStorming = () => {
   return (
-    <div className="space-y-8">
+    <div className="flex flex-col justify-center h-full gap-8 lg:h-screen lg:gap-12">
       <p className="text-4xl font-bold ">Built for the way you work</p>
       <TopMenuSlider />
       <div className="grid grid-cols-1 gap-8 lg:grid-cols-2">

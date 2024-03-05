@@ -9,7 +9,8 @@ import BrainStorming from "../../components/HomePage/BrainStorming";
 
 const Home = () => {
   return (
-    <div className="space-y-16 sm:space-y-20 md:space-y-24 2xl:space-y-32">
+    <div className="space-y-8 lg:space-y-2">
+      {/* <div className="space-y-16 sm:space-y-20 md:space-y-24 2xl:space-y-32"> */}
       {/* navbar */}
 
       {/* herosection */}

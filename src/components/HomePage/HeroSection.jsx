@@ -1,4 +1,5 @@
 import { Button, Input } from "antd";
+import { motion } from "framer-motion";
 import { ArrowRight, RotateCcw } from "lucide-react";
 import React from "react";
 import ReactStars from "react-stars";
@@ -7,10 +8,10 @@ import headimage from "../../assets/hero_section/headimage.svg";
 
 const HeroSection = () => {
   return (
-    <div className="grid grid-cols-1 lg:grid-cols-5 justify-between py-4 my-4 items-center gap-8">
+    <div className="grid items-center justify-between h-full grid-cols-1 gap-8 lg:h-screen lg:grid-cols-5">
       <div className="space-y-4 lg:col-span-2">
-        <p className="font-bold text-4xl">Take ideas from better to best</p>
-        <p className="text-sm text-zinc-600 font-semibold">
+        <p className="text-4xl font-bold">Take ideas from better to best</p>
+        <p className="text-sm font-semibold text-zinc-600">
           Miro is your team's visual platform to connect, collaborate, and
           create — together.
         </p>
@@ -23,23 +24,23 @@ const HeroSection = () => {
           type="primary"
           size="large"
           shape="round"
-          className="w-full flex items-center justify-center  bg-blue-600 text-white text-bold"
+          className="flex items-center justify-center w-full text-white bg-blue-600 text-bold"
         >
           <span>Sign up here</span>
           <ArrowRight />
         </Button>
 
-        <p className="text-xs text-zinc-400 font-normal">
+        <p className="text-xs font-normal text-zinc-400">
           Collaborate with your team within minutes
         </p>
 
-        <div className="sm:flex bg-slate-200 space-y-4 p-4 rounded-md justify-between items-start gap-8">
-          <div className="flex flex-col items-center sm:items-start justify-center  ">
+        <div className="items-start justify-between gap-8 p-4 space-y-4 rounded-md sm:flex bg-slate-200">
+          <div className="flex flex-col items-center justify-center sm:items-start ">
             <ReactStars count={5} size={24} color2={"#FF9D48"} />
             <p className="text-xs ">Based on 5149+ reviews:</p>
           </div>
 
-          <div className="flex-1 flex justify-around items-center gap-2 font-bold  ">
+          <div className="flex items-center justify-around flex-1 gap-2 font-bold ">
             <p>
               <RotateCcw />
             </p>
@@ -50,7 +51,18 @@ const HeroSection = () => {
       </div>
 
       <div className="lg:col-span-3">
-        <img src={headimage} alt="headimage" className="w-full" />
+        <motion.img
+          initial={{
+            x: 100,
+            opacity: 0,
+          }}
+          whileInView={{ x: 0, opacity: 1 }}
+          viewport={{ once: true }} //if you don't want it to happen again and again
+          transition={{ duration: 1.0 }}
+          src={headimage}
+          alt="headimage"
+          className="w-full"
+        />
       </div>
     </div>
   );

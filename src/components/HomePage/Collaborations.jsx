@@ -53,23 +53,23 @@ const constraints = [
 const Collaborations = () => {
   return (
     <>
-      <div className="flex flex-col gap-8 items-center">
+      <div className="flex flex-col items-center justify-center h-full gap-8 lg:h-screen lg:gap-12">
         <div className="relative ">
-          <p className="font-bold text-4xl p-6">
+          <p className="p-6 text-4xl font-bold">
             Collaborate without constraints
           </p>
-          <p className="text-end rotate-12 absolute top-0 right-0">
-            <span className="text-xs font-bold bg-yellow-400 px-2 rounded-md">
+          <p className="absolute top-0 right-0 text-end rotate-12">
+            <span className="px-2 text-xs font-bold bg-yellow-400 rounded-md">
               YOUR IDEA STARTS HERE
             </span>
           </p>
         </div>
 
-        <div className="md:flex space-y-4 gap-8 ">
+        <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3 ">
           {constraints?.map((content) => (
-            <div key={content?.id} className="space-y-4 w-full md:w-1/3 ">
-              <p className="font-bold text-xl">{content?.title}</p>
-              <div className="text-zinc-600 text-sm">
+            <div key={content?.id} className="w-full py-4 space-y-4">
+              <p className="text-xl font-bold">{content?.title}</p>
+              <div className="text-sm text-zinc-600">
                 {content?.description}
               </div>
             </div>
@@ -81,7 +81,7 @@ const Collaborations = () => {
             type="primary"
             size="large"
             shape="round"
-            className="flex items-center justify-center  bg-blue-600 text-white text-bold"
+            className="flex items-center justify-center text-white bg-blue-600 text-bold"
           >
             <span>Sign up here</span>
             <ArrowRight />
