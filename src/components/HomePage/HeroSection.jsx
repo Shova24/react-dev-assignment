@@ -8,7 +8,7 @@ import headimage from "../../assets/hero_section/headimage.svg";
 
 const HeroSection = () => {
   return (
-    <div className="grid items-center justify-between h-full grid-cols-1 gap-8 lg:h-screen lg:grid-cols-5">
+    <div className="grid items-center justify-between h-full grid-cols-1 gap-8 lg:h-screen  lg:grid-cols-5">
       <div className="space-y-4 lg:col-span-2">
         <p className="text-4xl font-bold">Take ideas from better to best</p>
         <p className="text-sm font-semibold text-zinc-600">

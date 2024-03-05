@@ -53,7 +53,7 @@ const constraints = [
 const Collaborations = () => {
   return (
     <>
-      <div className="flex flex-col items-center justify-center h-full gap-8 lg:h-screen lg:gap-12">
+      <div className="flex flex-col items-center justify-center h-full gap-8 lg:h-screen  lg:gap-12">
         <div className="relative ">
           <p className="p-6 text-4xl font-bold">
             Collaborate without constraints

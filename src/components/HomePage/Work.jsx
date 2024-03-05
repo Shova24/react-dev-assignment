@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 
 const Work = () => {
   return (
-    <div className="grid items-center justify-center h-full grid-cols-1 gap-8 lg:h-screen lg:grid-cols-2">
+    <div className="grid items-center justify-center h-full grid-cols-1 gap-8 lg:h-screen  lg:grid-cols-2">
       <div className="space-y-8">
         <p className="text-4xl font-bold">Work together, wherever you work</p>
         <p className="text-zinc-600 text-normal">

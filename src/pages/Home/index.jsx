@@ -6,6 +6,7 @@ import Tools from "../../components/HomePage/Tools";
 import Work from "../../components/HomePage/Work";
 import Report from "../../components/HomePage/Report";
 import BrainStorming from "../../components/HomePage/BrainStorming";
+import Teams from "../../components/HomePage/Teams";
 
 const Home = () => {
   return (
@@ -35,6 +36,7 @@ const Home = () => {
       <BrainStorming />
 
       {/* teams */}
+      <Teams />
 
       {/* Customer stories */}
       <CustomerStories />
