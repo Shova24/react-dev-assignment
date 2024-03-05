@@ -1,7 +1,9 @@
-import React from "react";
-import report_img from "../../assets/report/report.jpeg";
 import { Button } from "antd";
 import { ArrowRight } from "lucide-react";
+import React from "react";
+
+import report_img from "../../assets/report/report.jpeg";
+
 const Report = () => {
   return (
     <div
@@ -17,7 +19,7 @@ const Report = () => {
           type="primary"
           size="large"
           shape="round"
-          className="flex items-center justify-center text-white bg-blue-600  text-bold"
+          className="flex items-center justify-center text-white bg-blue-600 text-bold"
         >
           <span>Sign up here</span>
           <ArrowRight />

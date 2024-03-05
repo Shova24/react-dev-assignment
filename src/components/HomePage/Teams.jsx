@@ -2,23 +2,14 @@ import { ArrowRight } from "lucide-react";
 import React from "react";
 import { Link } from "react-router-dom";
 
-import TopMenuSlider from "../TopMenuSlider";
-import teams_img from "../../assets/teams/teams.png";
 import checkmark from "../../assets/teams/checkmark.png";
 import icon_1 from "../../assets/teams/icon_1.png";
 import icon_2 from "../../assets/teams/icon_2.png";
 import icon_3 from "../../assets/teams/icon_3.png";
 import icon_4 from "../../assets/teams/icon_4.png";
-
-const team_lists = [
-  "UX & Design",
-  "Marketing",
-  "Product Management",
-  "Engineering",
-  "Consultants ",
-  "Agile Coaches",
-  "Sales",
-];
+import teams_img from "../../assets/teams/teams.png";
+import { team_lists } from "../../utils/helpers";
+import TopMenuSlider from "../TopMenuSlider";
 
 const Teams = () => {
   return (

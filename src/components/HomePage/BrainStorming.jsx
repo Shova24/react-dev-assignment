@@ -3,17 +3,8 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 import brainstorming_img from "../../assets/brainstorming/brainstorming.png";
+import { works } from "../../utils/helpers";
 import TopMenuSlider from "../TopMenuSlider";
-
-const works = [
-  "Brainstorming",
-  "Diagramming",
-  "Meeting & Workshops",
-  "Scrum Events",
-  "Mapping ",
-  "Research & Design",
-  "Strategic Planning",
-];
 
 const BrainStorming = () => {
   return (

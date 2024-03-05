@@ -6,7 +6,7 @@ import tools from "../../assets/tools/tools.png";
 
 const Tools = () => {
   return (
-    <div className="grid items-center justify-center h-full grid-cols-1 gap-8 lg:h-screen  lg:grid-cols-2">
+    <div className="grid items-center justify-center h-full grid-cols-1 gap-8 lg:h-screen lg:grid-cols-2">
       <div>
         <img src={tools} alt="tools" className="w-full" />
       </div>
